@@ -49,5 +49,11 @@ Gist 中新建名为 `doubanTest.md` 的文件，并从 URL 中得到 Gist ID。
 
 之后每次 `push` 和每日 00:00 UTC+0 时会触发更新 Gist，如果需要修改触发时机可以调整刚刚的 GitHub Actions 配置文件。
 
+## 测试
+
+> 调试成功即可打狗
+
+- [ ] 初步调试: 更改文本长度
+
 ## License
 [MIT License](https://github.com/CodeDaraW/douban-status-tracker/blob/master/LICENSE)
