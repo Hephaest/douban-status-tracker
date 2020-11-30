@@ -9,8 +9,8 @@ export const TitleCNMap = {
 
 export const TitleENMap = {
   book: '📚 Book',
-  movie: '🍿 Movie',
-  music: '🎧 Music',
+  movie: '🎬 Movie',
+  music: '🎵 Music',
 };
 
 export const KeywordMap: Record<string, Record<string, string>> = {
