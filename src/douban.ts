@@ -9,25 +9,17 @@ export const TitleMap = {
 
 export const KeywordMap: Record<string, Record<string, string>> = {
   book: {
-    do: '本在读',
-    wish: '本想读',
     collect: '本读过',
   },
   movie: {
-    do: '部在看',
-    wish: '部想看',
     collect: '部看过',
   },
   music: {
-    do: '张在听',
-    wish: '张想听',
     collect: '张听过',
   },
 };
 
 interface CountInfo {
-  do: number; // 在
-  wish: number; // 想
   collect: number; // 过
 }
 
@@ -62,9 +54,7 @@ export const getDoubanUserInfo = async (id: string, cookie: string): Promise<Cou
     return {
       ...acc,
       [cur]: {
-        do: countTuple[0],
-        wish: countTuple[1],
-        collect: countTuple[2],
+        collect: countTuple[0],
       },
     };
   }, {} as CountInfoMap);

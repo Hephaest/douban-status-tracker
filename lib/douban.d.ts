@@ -5,8 +5,6 @@ export declare const TitleMap: {
 };
 export declare const KeywordMap: Record<string, Record<string, string>>;
 interface CountInfo {
-    do: number;
-    wish: number;
     collect: number;
 }
 declare type CountInfoMap = Record<keyof typeof KeywordMap, CountInfo>;

@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import { GistBox } from 'gist-box';
+import { type } from 'os';
 import { getDoubanUserInfo, TitleMap, KeywordMap } from './douban';
+import generateBarChart from './generateBarChart';
 
 const {
   GIST_ID, GITHUB_TOKEN, DOUBAN_ID, DOUBAN_COOKIE,
@@ -17,11 +19,18 @@ const {
       token: GITHUB_TOKEN,
     });
     const detail = await getDoubanUserInfo(DOUBAN_ID, DOUBAN_COOKIE);
+    const sum = Object.keys(detail).map((type) => type['collect']).reduce((a, b) => a + b, 0);
     const lines = Object.keys(detail).map((type) => {
       const info = detail[type];
       const tile = TitleMap[type];
-      const data = Object.keys(info).map((key) => `${KeywordMap[type][key].slice(1)} ${info[key]}`.padEnd(7));
-      return `${tile}：${data.join(' | ')}`;
+      const percent = info['collect'] / sum * 100;
+      const line = [
+        `${tile}`.padEnd(10),
+        `${KeywordMap[type]['collect'].slice(1)} ${info['collect']}`.padEnd(7),
+        generateBarChart(percent, 21),
+        String(percent.toFixed(1)).padStart(5) + '%',
+      ];
+      return line;
     });
     await box.update({
       filename: 'douban.md',
