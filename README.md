@@ -32,7 +32,7 @@ $ douban-status-tracker
 
 ## 使用
 ### 1. 创建 Gist
-Gist 中新建名为 `doubanTest.md` 的文件，并从 URL 中得到 Gist ID。
+Gist 中新建名为 `douban.md` 的文件，并从 URL 中得到 Gist ID。
 
 ### 2. 创建 GitHub Token
 访问 [Personal Access Tokens](https://github.com/settings/tokens) 创建更新 Gist 专用的 Token，需要勾选 `gist - Create gists` 权限，记住新生成的 Token。
