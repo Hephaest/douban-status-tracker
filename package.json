@@ -12,7 +12,7 @@
   },
   "scripts": {
     "lint": "eslint --ext .js,.ts ./src",
-    "build": "rm -rf lib && tsc",
+    "build": "rm -rf lib && tsc -p .",
     "prepublish": "npm run build"
   },
   "files": [
