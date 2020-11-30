@@ -20,8 +20,8 @@ const {
     const lines = Object.keys(detail).map((type) => {
       const info = detail[type];
       const tile = TitleMap[type];
-      const data = Object.keys(info).map((key) => `${info[key]} ${KeywordMap[type][key]}`);
-      return `${tile}：${data.join(' · ')}`;
+      const data = Object.keys(info).map((key) => `${KeywordMap[type][key]} ${info[key]}`);
+      return `${tile}：${data.join(' | ')}`;
     });
     await box.update({
       filename: 'douban.md',
