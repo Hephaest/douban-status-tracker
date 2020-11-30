@@ -20,7 +20,7 @@ const {
     const lines = Object.keys(detail).map((type) => {
       const info = detail[type];
       const tile = TitleMap[type];
-      const data = Object.keys(info).map((key) => `${KeywordMap[type][key]} ${info[key]}`);
+      const data = Object.keys(info).map((key) => `${KeywordMap[type][key]} ${info[key]}`.padEnd(7));
       return `${tile}：${data.join(' | ')}`;
     });
     await box.update({
