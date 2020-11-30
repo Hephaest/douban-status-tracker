@@ -19,7 +19,7 @@ const {
       token: GITHUB_TOKEN,
     });
     const detail = await getDoubanUserInfo(DOUBAN_ID, DOUBAN_COOKIE);
-    const sum = Object.keys(detail).map((type) => type['collect']).reduce((a, b) => a + b, 0);
+    const sum = Object.keys(detail).map((type) => detail[type]['collect']).reduce((a, b) => a + b, 0);
     const lines = Object.keys(detail).map((type) => {
       const info = detail[type];
       const tile = TitleMap[type];
@@ -30,7 +30,7 @@ const {
         generateBarChart(percent, 21),
         String(percent.toFixed(1)).padStart(5) + '%',
       ];
-      return line;
+      return line.join(' ');
     });
     await box.update({
       filename: 'douban.md',
