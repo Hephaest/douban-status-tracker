@@ -55,6 +55,7 @@ Gist 中新建名为 `doubanTest.md` 的文件，并从 URL 中得到 Gist ID。
 
 - [x] 初步调试: 更改文本长度
 - [ ] 修改格式, 布局
+- [ ] 确认爬虫失败的原因
 
 ## License
 [MIT License](https://github.com/CodeDaraW/douban-status-tracker/blob/master/LICENSE)
