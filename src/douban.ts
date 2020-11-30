@@ -1,10 +1,16 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import cheerio from 'cheerio';
 
-export const TitleMap = {
-  book: '书 📚',
-  movie: '影 🎬',
-  music: '音 🎵',
+export const TitleCNMap = {
+  book: '📚 书',
+  movie: '🎬 影',
+  music: '🎵 音',
+};
+
+export const TitleENMap = {
+  book: '📚 Book',
+  movie: '🍿 Movie',
+  music: '🎧 Music',
 };
 
 export const KeywordMap: Record<string, Record<string, string>> = {
@@ -16,6 +22,30 @@ export const KeywordMap: Record<string, Record<string, string>> = {
   },
   music: {
     collect: '张听过',
+  },
+};
+
+export const VerbCNMap: Record<string, Record<string, string>> = {
+  book: {
+    collect: '读过',
+  },
+  movie: {
+    collect: '看过',
+  },
+  music: {
+    collect: '听过',
+  },
+};
+
+export const VerbENMap: Record<string, Record<string, string>> = {
+  book: {
+    collect: 'read',
+  },
+  movie: {
+    collect: 'seen',
+  },
+  music: {
+    collect: 'listened',
   },
 };
 

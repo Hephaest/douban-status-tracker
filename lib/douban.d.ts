@@ -1,9 +1,16 @@
-export declare const TitleMap: {
+export declare const TitleCNMap: {
+    book: string;
+    movie: string;
+    music: string;
+};
+export declare const TitleENMap: {
     book: string;
     movie: string;
     music: string;
 };
 export declare const KeywordMap: Record<string, Record<string, string>>;
+export declare const VerbCNMap: Record<string, Record<string, string>>;
+export declare const VerbENMap: Record<string, Record<string, string>>;
 interface CountInfo {
     collect: number;
 }
