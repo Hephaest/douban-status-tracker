@@ -33,7 +33,7 @@ const {
       const line = [
         `${tile}`.padEnd(7),
         verbMap[type]['collect'].padEnd(7),
-        `${info['collect']}`.padEnd(7),
+        `${info['collect']}`.padStart(7),
         generateBarChart(percent, 21),
         String(percent.toFixed(1)).padStart(5) + '%',
       ];
