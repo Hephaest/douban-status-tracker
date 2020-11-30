@@ -5,14 +5,14 @@
   "main": "lib/index.js",
   "keywords": [],
   "repository": "git@github.com:Hephaest/douban-status-tracker.git",
-  "author": "Hephaest <philliphily@gmail.com>",
+  "author": "hephaest <philliphily@gmail.com>",
   "license": "ISC",
   "bin": {
     "douban-box": "lib/index.js"
   },
   "scripts": {
     "lint": "eslint --ext .js,.ts ./src",
-    "build": "rm -rf lib && tsc -p .",
+    "build": "rm -rf lib && tsc",
     "prepublish": "npm run build"
   },
   "files": [
