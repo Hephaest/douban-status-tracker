@@ -1,0 +1,38 @@
+{
+  "name": "douban-status-tracker",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "keywords": [],
+  "repository": "git@github.com:Hephaest/douban-status-tracker.git",
+  "author": "Hephaest <philliphily@gmail.com>",
+  "license": "ISC",
+  "bin": {
+    "douban-box": "lib/index.js"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js,.ts ./src",
+    "build": "rm -rf lib && tsc",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@types/cheerio": "^0.22.22",
+    "@types/node": "^14.14.10",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "cheerio": "^1.0.0-rc.3",
+    "gist-box": "^0.3.1",
+    "tslib": "^2.0.3"
+  }
+}
