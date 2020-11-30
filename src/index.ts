@@ -28,10 +28,9 @@ const {
     const sum = Object.keys(detail).map((type) => detail[type]['collect']).reduce((a, b) => a + b, 0);
     const lines = Object.keys(detail).map((type) => {
       const info = detail[type];
-      const tile = titleMap[type];
       const percent = info['collect'] / sum * 100;
       const line = [
-        `${tile}`.padEnd(7),
+        titleMap[type].padEnd(10),
         verbMap[type]['collect'].padEnd(5),
         `${info['collect']}`.padStart(5),
         generateBarChart(percent, 21),
