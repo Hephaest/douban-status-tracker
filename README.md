@@ -10,7 +10,7 @@
 
 ## 安装
 ``` sh
-$ npm i -g douban-box
+$ npm i -g douban-status-tracker
 ```
 
 ## 基本原理
@@ -25,7 +25,7 @@ $ npm i -g douban-box
 执行 CLI 时会读取环境变量，抓取指定用户的主页，更新对应的 Gist，若无报错则说明更新成功。 
 
 ``` sh
-$ douban-box
+$ douban-status-tracker
 ```
 
 另外可以通过 GitHub Actions 免费实现定时更新的功能。
@@ -41,7 +41,7 @@ Gist 中新建名为 `douban.md` 的文件，并从 URL 中得到 Gist ID。
 豆瓣 ID 是个人主页中 `people` 后紧接的那串数字或者自定义字符，例如我的主页链接 `https://www.douban.com/people/daraw/` 中是 `daraw`，在登录态下查看 Cookie，其中 `dbcl2` 是关键，复制这个 key 对应的值，构造出 `dbcl2="xxxxxxx"` 即可当做 Cookie，当然把整个 Cookie 都复制过去也是可以的。
 
 ### 4. 通过 GitHub Actions 自动更新 Gist
-- 创建一个 Repo 并启用 GitHub Actions，可以参考本项目的 [.github/workflows/main.yml](https://github.com/CodeDaraW/douban-box/blob/master/.github/workflows/main.yml) 文件。
+- 创建一个 Repo 并启用 GitHub Actions，可以参考本项目的 [.github/workflows/main.yml](https://github.com/CodeDaraW/douban-status-tracker/blob/master/.github/workflows/main.yml) 文件。
 
 - 修改 `GIST_ID` 和 `DOUBAN_ID` 为刚刚所得到的 Gist ID 和豆瓣 ID。  
 
@@ -50,4 +50,4 @@ Gist 中新建名为 `douban.md` 的文件，并从 URL 中得到 Gist ID。
 之后每次 `push` 和每日 00:00 UTC+0 时会触发更新 Gist，如果需要修改触发时机可以调整刚刚的 GitHub Actions 配置文件。
 
 ## License
-[MIT License](https://github.com/CodeDaraW/douban-box/blob/master/LICENSE)
+[MIT License](https://github.com/CodeDaraW/douban-status-tracker/blob/master/LICENSE)

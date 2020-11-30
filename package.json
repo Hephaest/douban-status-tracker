@@ -8,7 +8,7 @@
   "author": "hephaest <philliphily@gmail.com>",
   "license": "ISC",
   "bin": {
-    "douban-box": "lib/index.js"
+    "douban-status-tracker": "lib/index.js"
   },
   "scripts": {
     "lint": "eslint --ext .js,.ts ./src",
