@@ -45,7 +45,7 @@ export const VerbENMap: Record<string, Record<string, string>> = {
     collect: 'seen',
   },
   music: {
-    collect: 'listened',
+    collect: 'heard',
   },
 };
 

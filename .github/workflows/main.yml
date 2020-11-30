@@ -28,7 +28,8 @@ jobs:
         run: |
           douban-status-tracker
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
           DOUBAN_ID: ${{ secrets.DOUBAN_ID }}
           DOUBAN_COOKIE: ${{ secrets.DOUBAN_COOKIE }}
+          LANG: ${{ secrets.LANG }}

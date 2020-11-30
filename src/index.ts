@@ -5,7 +5,7 @@ import { getDoubanUserInfo, TitleCNMap, TitleENMap, VerbCNMap, VerbENMap } from 
 import generateBarChart from './generateBarChart';
 
 const {
-  GIST_ID, GITHUB_TOKEN, DOUBAN_ID, DOUBAN_COOKIE, Lang
+  GIST_ID, GITHUB_TOKEN, DOUBAN_ID, DOUBAN_COOKIE, LANG
 } = process.env;
 
 (async () => {
@@ -20,8 +20,8 @@ const {
     });
     
     // Default is zh-CN version.
-    const titleMap = Lang == 'EN' ? TitleENMap : TitleCNMap;
-    const verbMap = Lang == 'EN' ? VerbENMap : VerbCNMap;
+    const titleMap = LANG == 'EN' ? TitleENMap : TitleCNMap;
+    const verbMap = LANG == 'EN' ? VerbENMap : VerbCNMap;
 
     const detail = await getDoubanUserInfo(DOUBAN_ID, DOUBAN_COOKIE);
 
@@ -32,8 +32,8 @@ const {
       const percent = info['collect'] / sum * 100;
       const line = [
         `${tile}`.padEnd(7),
-        verbMap[type]['collect'].padEnd(7),
-        `${info['collect']}`.padStart(7),
+        verbMap[type]['collect'].padEnd(5),
+        `${info['collect']}`.padStart(5),
         generateBarChart(percent, 21),
         String(percent.toFixed(1)).padStart(5) + '%',
       ];
