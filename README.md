@@ -18,9 +18,10 @@ $ npm i -g douban-status-tracker
 | 变量 | 含义 |
 |---|---|
 | GIST_ID | Gist ID |
-| GITHUB_TOKEN | GitHub Token |
+| GH_TOKEN | GitHub Token |
 | DOUBAN_ID | 豆瓣用户 ID |
 | DOUBAN_COOKIE | 豆瓣登录态 Cookie |
+| LANG | 偏好语言 |
 
 执行 CLI 时会读取环境变量，抓取指定用户的主页，更新对应的 Gist，若无报错则说明更新成功。 
 
@@ -43,9 +44,9 @@ Gist 中新建名为 `douban.md` 的文件，并从 URL 中得到 Gist ID。
 ### 4. 通过 GitHub Actions 自动更新 Gist
 - 创建一个 Repo 并启用 GitHub Actions，可以参考本项目的 [.github/workflows/main.yml](https://github.com/Hephaest/douban-status-tracker/blob/master/.github/workflows/main.yml) 文件。
 
-- 修改 `GIST_ID` 和 `DOUBAN_ID` 为刚刚所得到的 Gist ID 和豆瓣 ID。  
+- 修改 `GIST_ID` 和 `DOUBAN_ID` 为刚刚所得到的 Gist ID 和豆瓣 ID。
 
-- 为了不暴露自己的 GitHub Token 和豆瓣 Cookie，在项目的 `Settings -> Secrets` 中创建两个变量 `TOKEN` 和 `DOUBAN_COOKIE`，分别为 GitHub Token 和豆瓣 Cookie。  
+- 在项目的 `Settings -> Secrets` 中新建上述的环境变量。
 
 之后每次 `push` 和每日 00:00 UTC+0 时会触发更新 Gist，如果需要修改触发时机可以调整刚刚的 GitHub Actions 配置文件。
 
