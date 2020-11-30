@@ -9,19 +9,19 @@ export const TitleMap = {
 
 export const KeywordMap: Record<string, Record<string, string>> = {
   book: {
-    do: '在读',
-    wish: '想读',
-    collect: '读过',
+    do: '本在读',
+    wish: '本想读',
+    collect: '本读过',
   },
   movie: {
-    do: '在看',
-    wish: '想看',
-    collect: '看过',
+    do: '部在看',
+    wish: '部想看',
+    collect: '部看过',
   },
   music: {
-    do: '在听',
-    wish: '想听',
-    collect: '听过',
+    do: '张在听',
+    wish: '张想听',
+    collect: '张听过',
   },
 };
 
