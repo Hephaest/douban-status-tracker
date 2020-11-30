@@ -53,7 +53,7 @@ Gist 中新建名为 `doubanTest.md` 的文件，并从 URL 中得到 Gist ID。
 
 > 调试成功即可打狗
 
-- [ ] 初步调试: 更改文本长度
+- [x] 初步调试: 更改文本长度
 
 ## License
 [MIT License](https://github.com/CodeDaraW/douban-status-tracker/blob/master/LICENSE)
