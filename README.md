@@ -41,7 +41,7 @@ Gist 中新建名为 `douban.md` 的文件，并从 URL 中得到 Gist ID。
 豆瓣 ID 是个人主页中 `people` 后紧接的那串数字或者自定义字符，例如我的主页链接 `https://www.douban.com/people/daraw/` 中是 `daraw`，在登录态下查看 Cookie，其中 `dbcl2` 是关键，复制这个 key 对应的值，构造出 `dbcl2="xxxxxxx"` 即可当做 Cookie，当然把整个 Cookie 都复制过去也是可以的。
 
 ### 4. 通过 GitHub Actions 自动更新 Gist
-- 创建一个 Repo 并启用 GitHub Actions，可以参考本项目的 [.github/workflows/main.yml](https://github.com/CodeDaraW/douban-status-tracker/blob/master/.github/workflows/main.yml) 文件。
+- 创建一个 Repo 并启用 GitHub Actions，可以参考本项目的 [.github/workflows/main.yml](https://github.com/Hephaest/douban-status-tracker/blob/master/.github/workflows/main.yml) 文件。
 
 - 修改 `GIST_ID` 和 `DOUBAN_ID` 为刚刚所得到的 Gist ID 和豆瓣 ID。  
 
@@ -54,8 +54,8 @@ Gist 中新建名为 `douban.md` 的文件，并从 URL 中得到 Gist ID。
 > 调试成功即可打狗
 
 - [x] 初步调试: 更改文本长度
-- [ ] 修改格式, 布局
-- [ ] 确认爬虫失败的原因
+- [x] 修改格式, 布局
+- [x] 确认爬虫失败的原因
 
 ## License
 [MIT License](https://github.com/CodeDaraW/douban-status-tracker/blob/master/LICENSE)
