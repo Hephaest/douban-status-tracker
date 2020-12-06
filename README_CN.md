@@ -1,7 +1,9 @@
 <p align="center">
   <img width="400" alt="Douban Status in chinese" src="https://user-images.githubusercontent.com/37981444/101278762-94f7cf80-3772-11eb-9c7e-79130319788f.png">
   <h2 align="center">豆瓣状态跟踪板</h2>
-  <p align="center">更新豆瓣状态相关的置顶的 Gist</p>
+  <p align="center">
+    <img src="https://github.com/Hephaest/douban-status-tracker/workflows/Update%20Douban%20Stats%20Gist/badge.svg?branch=master" alt="Update Douban Stats Gist">
+  </p>
 </p>
 
 --- 
