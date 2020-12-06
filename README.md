@@ -1,16 +1,16 @@
 <p align="center">
   <img width="400" alt="Douban Status in English" src="https://user-images.githubusercontent.com/37981444/101275947-a636e100-375e-11eb-9ce8-5affbda6e228.png">
-  <h2 align="center">Douban Status Tracker</h2>
+  <h3 align="center">Douban Status Tracker</h3>
   <p align="center">
     <img src="https://github.com/Hephaest/douban-status-tracker/workflows/Update%20Douban%20Stats%20Gist/badge.svg?branch=master" alt="Update Douban Stats Gist">
   </p>
 </p>
 
---- 
-
-> 📌✨ For more pinned-gist projects like this one, check out: https://github.com/matchai/awesome-pinned-gists
+---
 
 English | [简体中文](README_CN.md)
+
+> 📌✨ For more pinned-gist projects like this one, check out: https://github.com/matchai/awesome-pinned-gists
 
 ## Table of Contents
 * [Previous Work](#previous-work)

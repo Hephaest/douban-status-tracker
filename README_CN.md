@@ -1,16 +1,16 @@
 <p align="center">
   <img width="400" alt="Douban Status in chinese" src="https://user-images.githubusercontent.com/37981444/101278762-94f7cf80-3772-11eb-9c7e-79130319788f.png">
-  <h2 align="center">豆瓣状态跟踪板</h2>
+  <h3 align="center">豆瓣状态跟踪板</h3>
   <p align="center">
     <img src="https://github.com/Hephaest/douban-status-tracker/workflows/Update%20Douban%20Stats%20Gist/badge.svg?branch=master" alt="Update Douban Stats Gist">
   </p>
 </p>
 
---- 
-
-> 📌✨ 更多像这样的 Pinned Gist 项目请访问: https://github.com/matchai/awesome-pinned-gists
+---
 
 简体中文 | [English](README.md)
+
+> 📌✨ 更多像这样的 Pinned Gist 项目请访问: https://github.com/matchai/awesome-pinned-gists
 
 ## 目录
 * [前人之作](#前人之作)
