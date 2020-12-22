@@ -8,6 +8,8 @@
 
 ---
 
+[![LICENSE](https://img.shields.io/cocoapods/l/AFNetworking.svg)](https://github.com/Hephaest/douban-status-tracker/blob/master/LICENSE)
+
 English | [简体中文](README_CN.md)
 
 > 📌✨ For more pinned-gist projects like this one, check out: https://github.com/matchai/awesome-pinned-gists
@@ -18,7 +20,6 @@ English | [简体中文](README_CN.md)
   * [Prep work](#prep-work)
   * [Project setup](#project-setup)
 * [Installing](#installing)
-* [License](#license)
 
 ## Previous Work
 
@@ -73,6 +74,3 @@ You can install this package by using npm:
 ``` sh
 $ npm i -g douban-status-tracker
 ```
-
-## License
-[MIT License](https://github.com/Hephaest/douban-status-tracker/blob/master/LICENSE)
