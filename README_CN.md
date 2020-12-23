@@ -8,6 +8,8 @@
 
 ---
 
+[![LICENSE](https://img.shields.io/cocoapods/l/AFNetworking.svg)](https://github.com/Hephaest/douban-status-tracker/blob/master/LICENSE)
+
 简体中文 | [English](README.md)
 
 > 📌✨ 更多像这样的 Pinned Gist 项目请访问: https://github.com/matchai/awesome-pinned-gists
@@ -18,7 +20,6 @@
   * [准备工作](#准备工作)
   * [项目启动工作](#项目启动工作)
 * [安装](#安装)
-* [开源协议](#开源协议)
 
 ## 前人之作
 
@@ -73,6 +74,3 @@
 ``` sh
 $ npm i -g douban-status-tracker
 ```
-
-## 开源协议
-[MIT License](https://github.com/Hephaest/douban-status-tracker/blob/master/LICENSE)
