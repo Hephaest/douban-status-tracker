@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Update a pinned gist to contain Douban stats",
   "main": "lib/index.js",
-  "keywords": ["Douban", "Gist"],
+  "keywords": [
+    "Douban",
+    "Gist"
+  ],
   "repository": "git@github.com:Hephaest/douban-status-tracker.git",
   "author": "hephaest <philliphily@gmail.com>",
   "license": "ISC",

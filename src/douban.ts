@@ -60,9 +60,9 @@ export const getDoubanUserInfo = async (id: string, cookie: string): Promise<Cou
     headers: {
       Referer: 'https://www.douban.com/',
       Host: 'www.douban.com',
-      Cookie: cookie,
+      Cookie: `dbcl2=${cookie};`,
       // eslint-disable-next-line max-len
-      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36',
     },
     maxRedirects: 0,
   };

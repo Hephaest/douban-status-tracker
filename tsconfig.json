@@ -6,7 +6,7 @@
       "module": "commonjs",
       "target": "es2015",
       "sourceMap": false,
-      "allowJs": false,
+      "allowJs": true,
       "moduleResolution": "node",
       "forceConsistentCasingInFileNames": true,
       "noImplicitReturns": true,
@@ -32,6 +32,7 @@
       "acceptance-tests",
       "src/setupTests.ts",
       "test/",
-      "test-data/"
+      "test-data/",
+      "lib/"
   ]
 }
